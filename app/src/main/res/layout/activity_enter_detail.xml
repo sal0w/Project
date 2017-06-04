@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.akashsalow.project.EnterDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/salowicon" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/textview_style"
+            android:textAllCaps="true"
+            android:text="Enter Details" />
+
+        <EditText
+            android:id="@+id/firstname"
+            style="@style/edittext_style"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/lastname"
+            style="@style/edittext_style"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/phone"
+            style="@style/edittext_style"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/address"
+            style="@style/edittext_style"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="0.18"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/guest"
+            style="@style/edittext_style"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Number of Guest"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/rooms"
+            style="@style/edittext_style"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Total Number of rooms"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/bookBTN"
+            style="@style/button_style"
+            android:textAllCaps="true"
+            android:text="Book Rooms" />
+        <TextView
+            android:id="@+id/errorDetail"
+            style="@style/textview_style"
+            android:layout_weight="1"
+
+            android:textColor="#f44242"
+            />
+    </LinearLayout>
+</RelativeLayout>
