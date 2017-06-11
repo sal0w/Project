@@ -31,8 +31,13 @@
             android:id="@+id/textView"
             style="@style/textview_style"
             android:textAllCaps="true"
+            android:textStyle="bold"
             android:layout_weight="1"
-            android:text="Salow" />
+            android:text="INFOSYS LOGIN" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF" />
 
         <EditText
             android:id="@+id/email"

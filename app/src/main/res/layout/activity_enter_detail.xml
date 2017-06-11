@@ -28,6 +28,7 @@
             android:id="@+id/textView"
             style="@style/textview_style"
             android:textAllCaps="true"
+            android:textStyle="bold"
             android:text="Enter Details" />
 
         <EditText
@@ -88,7 +89,6 @@
             android:id="@+id/errorDetail"
             style="@style/textview_style"
             android:layout_weight="1"
-
             android:textColor="#f44242"
             />
     </LinearLayout>

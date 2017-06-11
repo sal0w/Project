@@ -24,6 +24,7 @@ public class ConfirmDetailActivity extends AppCompatActivity {
     private TextView mNoOfGuestsView;
     private TextView mTotalNoOfRoomsView;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

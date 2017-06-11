@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.akashsalow.project.RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/salowicon" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/textview_style"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:text="Enter Details" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF" />
+        <EditText
+            android:id="@+id/name"
+            style="@style/edittext_style"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/phoneNO"
+            style="@style/edittext_style"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/textview_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unit" />
+
+        <Spinner
+            android:id="@+id/unit_spinner"
+            style="@style/edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contextClickable="false"
+            android:elevation="2dp"
+            android:entries="@array/unit_arrays"
+            android:prompt="@string/unit_prompt"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/textview_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Technology" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Java"
+                android:textColor="@android:color/background_light" />
+
+            <CheckBox
+                android:id="@+id/apple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Apple"
+                android:textColor="@android:color/background_light" />
+
+            <CheckBox
+                android:id="@+id/androidCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Android"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/button_style"
+            android:text="Continue" />
+        <TextView
+            android:id="@+id/errorReg"
+            style="@style/textview_style"
+            android:layout_weight="1"
+            android:textColor="#f44242"
+            />
+
+    </LinearLayout>
+    </RelativeLayout>

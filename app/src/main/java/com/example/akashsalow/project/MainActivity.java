@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
                 //Toast.makeText(MainActivity.this, mEmailView.getText() +" "+ mPasswordView.getText()+" "+mEmailView.getText().equals("User001") , Toast.LENGTH_LONG).show();
                 if(mEmailView.getText().toString().equals("User001") && mPasswordView.getText().toString().equals("pwd123")){
                     //Toast.makeText(MainActivity.this, "Success", Toast.LENGTH_LONG).show();
-
-                    Intent intent = new Intent(getApplicationContext(), EnterDetailActivity.class);
+                    // last EnterDetailActivity
+                    Intent intent = new Intent(getApplicationContext(), RegistrationActivity.class);
                     startActivity(intent);
 
 

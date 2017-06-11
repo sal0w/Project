@@ -13,4 +13,13 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="unit_prompt">Choose Units</string>
+    <string-array name="unit_arrays">
+        <item>MFG</item>
+        <item>ECAS</item>
+        <item>ENG</item>
+        <item>IVS</item>
+        <item>ADM</item>
+        <item>IOT</item>
+    </string-array>
 </resources>

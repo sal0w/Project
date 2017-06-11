@@ -24,7 +24,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".EnterDetailActivity" />
-        <activity android:name=".ConfirmDetailActivity"></activity>
+        <activity android:name=".ConfirmDetailActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".SelectDcActivity" />
+        <activity android:name=".ConfrimActivity"></activity>
     </application>
 
 </manifest>
